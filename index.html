@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Find Your Weather</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+
+		<form class="cityGetter">
+		 	<input type="text" placeholder='enter city' name="city" size="30" autofocus required>
+		 	<input type="submit" value="Submit">
+		</form>
+ 
+		<div class="currentDataText">
+		</div>
+
+		<div class="forecastDataText"> 
+		</div>
+ 
+		<div class="zombieElements hidden">
+				
+			<p class="temperature" id = "temperatureText"> 
+			</p>
+
+			<p class="conditions"> 
+			</p>
+
+			<p class="humidity"> 
+			</p>
+ 
+			<p class="windSpeed"> 
+			</p>
+
+			<p class="cloudCover"> 
+			</p>
+
+			<a href="#" onclick="test();" style="color: blue;">Detailed 5 Day Forecast</a>
+ 
+			<dl class="forecastElement5Day">
+				<dt>Date:</dt>
+					<dd class="dateAndTime"></dd>
+				<dt>Forecast:</dt>
+					<dd class="forecastDescription"></dd>
+				<dt>Air Temperature:</dt>
+					<dd class="airTemperature"></dd>
+				<dt>Humidity:</dt>
+					<dd class="humidity5Day"></dd>
+			</dl>
+
+			<div class="error">
+				<p>Uh-oh! Something went wrong with your request. Here's what we know:</p>
+			</div>
+			 
+	    </div> <!-- end zombieElements div -->
+
+	</div> <!-- end container div -->
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
